@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../../components/navbar/navbar.component";
+import { SearchLayoutComponent } from "../../components/search-layout/search-layout.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [SearchLayoutComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
