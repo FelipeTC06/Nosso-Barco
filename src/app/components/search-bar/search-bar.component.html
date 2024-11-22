@@ -1,1 +1,28 @@
-<p>search-bar works!</p>
+@if (!smallDevice) {
+<div class="search-body">
+    <div class="place">
+        <p class="title-search">Onde:</p>
+        <input class="inp-search" type="text" placeholder="Buscar destinos">
+    </div>
+    <div class="dates">
+        <div class="date-in">
+            <p class="title-search">Check-in:</p>
+            <input class="inp-search" type="text" placeholder="Insira as datas">
+        </div>
+        <div class="date-out">
+            <p class="title-search">Checkout:</p>
+            <input class="inp-search" type="text" placeholder="Insira as datas" s>
+        </div>
+    </div>
+    <div class="btn-search">
+        <fa-icon [icon]="faSearch"></fa-icon>
+    </div>
+</div>
+} @else {
+<div class="small-search-body">
+    <span>Buscar embarcação</span>
+    <div class="btn-search">
+        <fa-icon [icon]="faSearch"></fa-icon>
+    </div>
+</div>
+}

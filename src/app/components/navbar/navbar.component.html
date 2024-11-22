@@ -1,1 +1,20 @@
-<p>navbar works!</p>
+<header class="header">
+    <section class="sec-1">
+        <div class="logo">
+            <img ngSrc="images/logo-completa-negativa-colorida.png" width="160" height="60" priority>
+        </div>
+        <div class="search">
+            @if (!smallDevice) {
+            <app-search-bar class="app-search-bar"></app-search-bar>
+            }
+        </div>
+        <div class="user">
+            <fa-icon class="user-icon" [icon]="faCircleUser"></fa-icon>
+        </div>
+    </section>
+    <section class="sec-2">
+        @if (smallDevice) {
+        <app-search-bar class="app-search-bar"></app-search-bar>
+        }
+    </section>
+</header>
