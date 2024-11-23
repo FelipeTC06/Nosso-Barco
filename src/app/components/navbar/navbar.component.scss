@@ -1,6 +1,6 @@
 .header {
     background-color: #eff0f3;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 5rem;
     display: flex;
     flex-direction: column;
     border-bottom: 1px rgb(156, 156, 156) solid;
@@ -46,4 +46,10 @@
         }
     }
 
+}
+
+@media (max-width: 620px) {
+    .header {
+      padding: 0.5rem 2rem;
+    }
 }

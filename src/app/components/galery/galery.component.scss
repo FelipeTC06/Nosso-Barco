@@ -1,0 +1,50 @@
+.galery {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-auto-rows: 18rem;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 2rem 5rem;
+    
+    
+    .body-card {
+        padding: 0.8rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+        .body-img {
+            flex: 0 0 60%;
+            width: 100%;
+            height: 60%;
+            border-radius: 8px;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+        }
+        
+        .body-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+
+            .label-location {
+                font-weight: bold;
+            }
+
+            .label-max-number {}
+
+            .label-period {}
+
+            .label-ammount {}
+        }
+    }
+}

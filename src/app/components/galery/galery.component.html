@@ -1,1 +1,15 @@
-<p>galery works!</p>
+<div class="galery">
+    @for (item of items; track $index) {
+    <div class="body-card">
+        <div class="body-img">
+            <img [src]="item.src" alt="boat img">
+        </div>
+        <div class="body-info">
+            <span class="label-location">{{ item.location }}</span>
+            <span class="label-max-number">Max à bordo {{ item.maxNumberOnBoard }}</span>
+            <span class="label-period">{{ item.period }}</span>
+            <span class="label-ammount">R${{item.ammout}} hora</span>
+        </div>
+    </div>
+    }
+</div>
