@@ -1,6 +1,6 @@
 <div class="galery">
     @for (item of items; track $index) {
-    <div class="body-card">
+    <div class="body-card" [routerLink]="['/boats', item.id, 'details']" >
         <div class="body-img">
             <img [src]="item.src" alt="boat img">
         </div>

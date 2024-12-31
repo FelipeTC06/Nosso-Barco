@@ -1,0 +1,24 @@
+<div class="details-body">
+    <div class="boat-image">
+        <img [src]="item.src" alt="boat img">
+    </div>
+    <div class="details-infos">
+        <div class="boat-title">
+            <h1>{{ item.title }}</h1>
+            <div class="d-flex">
+                <span class="boat-sub-title">{{ item.location }}</span>
+                <span class="boat-sub-title">Max à bordo {{ item.maxNumberOnBoard }}</span>
+            </div>
+        </div>
+        <div class="boat-owner">
+            <div class="owner-img">
+            </div>
+            <div class="owner-info">
+                <p class="owner-title">{{ item.ownerTitle }}</p>
+                <span class="owner-description">{{ item.ownerDescrition }}</span>
+            </div>
+        </div>
+        <div class="boat-description">
+        </div>
+    </div>
+</div>
