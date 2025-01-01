@@ -5,11 +5,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [NgOptimizedImage, SearchBarComponent, FontAwesomeModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+    selector: 'app-navbar',
+    imports: [NgOptimizedImage, SearchBarComponent, FontAwesomeModule],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
   faCircleUser = faCircleUser

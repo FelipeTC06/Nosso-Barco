@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-galery',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './galery.component.html',
-  styleUrl: './galery.component.scss'
+    selector: 'app-galery',
+    imports: [RouterLink],
+    templateUrl: './galery.component.html',
+    styleUrl: './galery.component.scss'
 })
 export class GaleryComponent {
   public items = [

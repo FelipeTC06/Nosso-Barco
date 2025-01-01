@@ -3,11 +3,10 @@ import { SearchLayoutComponent } from "../../components/search-layout/search-lay
 import { GaleryComponent } from "../../components/galery/galery.component";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [SearchLayoutComponent, GaleryComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [SearchLayoutComponent, GaleryComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

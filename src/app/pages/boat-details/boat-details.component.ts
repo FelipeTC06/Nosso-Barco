@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { SearchLayoutComponent } from "../../components/search-layout/search-layout.component";
 
 @Component({
-  selector: 'app-boat-details',
-  standalone: true,
-  imports: [SearchLayoutComponent],
-  templateUrl: './boat-details.component.html',
-  styleUrl: './boat-details.component.scss'
+    selector: 'app-boat-details',
+    imports: [SearchLayoutComponent],
+    templateUrl: './boat-details.component.html',
+    styleUrl: './boat-details.component.scss'
 })
 export class BoatDetailsComponent {
   public item = {
